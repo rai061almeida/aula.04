@@ -1,0 +1,76 @@
+# Criamos um dicionário para armazenar os usuários cadastrados.
+# A chave será o nome de usuário (login) e o valor será a senha.
+usuarios = {}
+
+
+def cadastrar_login():
+    """
+    Função responsável por cadastrar um novo usuário.
+    Ela solicita um nome de usuário e uma senha ao usuário.
+    """
+
+    # Pedimos ao usuário que digite um nome de login
+    login = input("Digite o nome de usuário: ")
+
+    # Verificamos se o login já existe no dicionário
+    if login in usuarios:
+        print("❌ Esse usuário já existe! Tente outro.")
+        return  # Encerramos a função caso o usuário já exista
+
+    # Pedimos ao usuário que digite uma senha
+    senha = input("Digite a senha: ")
+
+    # Armazenamos o login e a senha no dicionário
+    usuarios[login] = senha
+
+    # Exibimos uma mensagem de sucesso
+    print("✅ Usuário cadastrado com sucesso!")
+
+
+def fazer_login():
+    """
+    Função responsável por verificar se o usuário e senha estão corretos.
+    """
+
+    # Solicitamos o login
+    login = input("Digite seu usuário: ")
+
+    # Solicitamos a senha
+    senha = input("Digite sua senha: ")
+
+    # Verificamos se o login existe e se a senha está correta
+    if login in usuarios and usuarios[login] == senha:
+        print("✅ Login realizado com sucesso!")
+    else:
+        print("❌ Usuário ou senha incorretos.")
+
+
+# Criamos um pequeno menu para testar o sistema
+def menu():
+    """
+    Função principal que exibe opções ao usuário.
+    """
+
+    while True:
+        print("\n=== MENU ===")
+        print("1 - Cadastrar usuário")
+        print("2 - Fazer login")
+        print("3 - Sair")
+
+        # Recebemos a escolha do usuário
+        opcao = input("Escolha uma opção: ")
+
+        # Verificamos qual opção foi escolhida
+        if opcao == "1":
+            cadastrar_login()
+        elif opcao == "2":
+            fazer_login()
+        elif opcao == "3":
+            print("Saindo do sistema...")
+            break
+        else:
+            print("❌ Opção inválida! Tente novamente.")
+
+
+# Executamos o programa chamando o menu
+menu()

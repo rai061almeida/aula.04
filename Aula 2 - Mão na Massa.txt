@@ -1,0 +1,12 @@
+PROMPT GENÉRICO:
+  Escreva um parágrafo sobre Machine Learning.
+RESPOSTA: 
+  O Machine Learning é um ramo da Inteligência Artificial que permite aos sistemas aprenderem a partir de dados e melhorarem seu desempenho ao longo do tempo sem serem explicitamente programados para cada tarefa. Por meio de algoritmos e modelos estatísticos, ele é capaz de identificar padrões, fazer previsões e automatizar decisões, sendo amplamente utilizado em aplicações como recomendações de conteúdo, reconhecimento de imagens e assistentes virtuais. Essa tecnologia tem se tornado cada vez mais presente no cotidiano, impulsionando inovações em diversas áreas e tornando processos mais eficientes e inteligentes.
+
+PROMPT ESTRUTURADO:
+  Você é um profissional da TI e vai dar uma aula para estudantes leigos, faça um texto curto explicando o que é Machine Learning usando analogia com xadrez.
+RESPOSTA:
+  Imagine ensinar alguém a jogar xadrez: em vez de decorar todas as jogadas possíveis, a pessoa aprende observando partidas, testando estratégias e entendendo quais movimentos levam à vitória. O Machine Learning, área da Inteligência Artificial, funciona de forma parecida: em vez de receber todas as regras prontas, o sistema analisa muitos dados (como várias partidas de xadrez), identifica padrões e melhora suas decisões com a prática. Assim como um jogador evolui ao aprender com erros e acertos, um modelo de Machine Learning se torna mais eficiente conforme é treinado, conseguindo prever melhores resultados ou tomar decisões mais inteligentes ao longo do tempo.
+
+ANÁLISE:
+  A resposta usando o prompt estruturado é mais eficiente e clara para entendimento, pois ao dar mais informações a respeito do contexto e restrições, reduziu o risco de fugir daquilo que eu quero, ou de ir além do que eu desejo.
